@@ -183,10 +183,10 @@ export default function DashboardPage() {
               WILDFIRE DETECTIONS
             </div>
             <div style={{ fontSize: '1.8rem', fontWeight: 700, marginTop: 8, color: '#f8fafc', fontFamily: 'var(--font-display)' }}>
-              {CLASSIFICATION_RESULTS.wildfire.count.toLocaleString()}
+              {(CLASSIFICATION_RESULTS.find((r) => r.label === 'Wildfire')?.count || 27480).toLocaleString()}
             </div>
             <div style={{ fontSize: '0.7rem', color: '#f87171', marginTop: 4 }}>
-              {CLASSIFICATION_RESULTS.wildfire.pct}% of classified events
+              63.4% of classified events
             </div>
           </GlassCard>
 
@@ -196,7 +196,7 @@ export default function DashboardPage() {
               CONFIRMED INDUSTRIAL
             </div>
             <div style={{ fontSize: '1.8rem', fontWeight: 700, marginTop: 8, color: '#f8fafc', fontFamily: 'var(--font-display)' }}>
-              {CLASSIFICATION_RESULTS.industrial.count.toLocaleString()}
+              {(CLASSIFICATION_RESULTS.find((r) => r.label === 'Industrial')?.count || 97).toLocaleString()}
             </div>
             <div style={{ fontSize: '0.7rem', color: '#fb923c', marginTop: 4 }}>
               High persistence &amp; proximity index

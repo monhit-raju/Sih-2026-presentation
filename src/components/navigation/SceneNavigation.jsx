@@ -23,21 +23,26 @@ export function TopNav({ current, total, onResearch }) {
       <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
         {onResearch && (
           <button
-            onClick={onResearch}
+            id="btn-research-sources"
+            onClick={(e) => {
+              e.stopPropagation();
+              onResearch();
+            }}
             style={{
               display: 'flex',
               alignItems: 'center',
               gap: 6,
-              background: 'rgba(59, 130, 246, 0.1)',
-              border: '1px solid rgba(59, 130, 246, 0.25)',
+              background: 'rgba(59, 130, 246, 0.15)',
+              border: '1px solid rgba(59, 130, 246, 0.35)',
               color: 'var(--color-blue-glow)',
               borderRadius: 6,
-              padding: '5px 12px',
+              padding: '6px 14px',
               fontFamily: 'var(--font-mono)',
               fontSize: '0.68rem',
               letterSpacing: '0.08em',
               cursor: 'pointer',
               transition: 'all 0.2s ease',
+              pointerEvents: 'auto',
             }}
             onMouseOver={(e) => {
               e.currentTarget.style.background = 'rgba(59, 130, 246, 0.2)';
