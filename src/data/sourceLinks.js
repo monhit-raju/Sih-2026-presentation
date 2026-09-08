@@ -9,7 +9,13 @@ export const RESEARCH_SOURCES = [
       {
         label: 'Google Docs Research Notes',
         description: 'Primary project research and methodology documentation',
-        url: '#',
+        url: 'https://docs.google.com/document/d/1USacf4ONUiFgN-j-DE_meJYSDb14lsGoXbrPl5QZUMU/edit?usp=sharing',
+        type: 'doc',
+      },
+      {
+        label: 'Case Study & Project Drive',
+        description: 'Comprehensive case study documentation, presentation assets, and references',
+        url: 'https://drive.google.com/drive/folders/1wUalbwyz7dt1ZE1yd5j-azrV857FjWyL?usp=sharing',
         type: 'doc',
       },
       {
@@ -33,7 +39,7 @@ export const RESEARCH_SOURCES = [
       {
         label: 'Project Documentation',
         description: 'Full project technical documentation and architecture notes',
-        url: '#',
+        url: 'https://drive.google.com/drive/folders/1wUalbwyz7dt1ZE1yd5j-azrV857FjWyL?usp=sharing',
         type: 'doc',
       },
     ],
@@ -42,6 +48,12 @@ export const RESEARCH_SOURCES = [
     category: 'DATA SOURCES',
     icon: '🛰️',
     items: [
+      {
+        label: 'Nature Scientific Data — Global Industrial Heat Sources',
+        description: 'Annual dynamics of global remote industrial heat sources dataset from 2012 to 2021 (Ma et al., 2024)',
+        url: 'https://www.nature.com/articles/s41597-024-03461-3',
+        type: 'data',
+      },
       {
         label: 'NASA FIRMS — Active Fire Data',
         description: 'Fire Information for Resource Management System. Near-real-time VIIRS and MODIS active fire detections.',
@@ -78,6 +90,12 @@ export const RESEARCH_SOURCES = [
     category: 'TECHNICAL REFERENCES',
     icon: '🔬',
     items: [
+      {
+        label: 'ScienceDirect — Industrial Heat Source Identification',
+        description: 'Remote Sensing of Environment: Identifying industrial heat sources using time-series of VIIRS Nightfire with an object-oriented approach (Liu et al., 2018)',
+        url: 'https://www.sciencedirect.com/science/article/abs/pii/S0034425717304820',
+        type: 'reference',
+      },
       {
         label: 'OpenStreetMap / Overpass API',
         description: 'Open-source geographic data used for industrial infrastructure identification and spatial queries',
