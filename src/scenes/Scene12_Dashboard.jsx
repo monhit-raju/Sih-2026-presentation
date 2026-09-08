@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
-import { ArrowRight, Globe, Activity, Map } from 'lucide-react';
+import { Globe, Activity, Map } from 'lucide-react';
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 24 },
@@ -15,7 +14,6 @@ const DASHBOARD_FEATURES = [
 ];
 
 export default function Scene12_Dashboard({ active }) {
-  const navigate = useNavigate();
   if (!active) return null;
   return (
     <div className="scene scene-center">
@@ -107,25 +105,6 @@ export default function Scene12_Dashboard({ active }) {
             animate={{ rotate: 360 }}
             transition={{ duration: 4, repeat: Infinity, ease: 'linear' }}
           />
-        </motion.div>
-
-        {/* CTA Button */}
-        <motion.div
-          {...fadeUp(1.1)}
-          style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16 }}
-        >
-          <motion.button
-            className="btn-primary btn-dashboard"
-            onClick={() => navigate('/dashboard')}
-            whileHover={{ scale: 1.04 }}
-            whileTap={{ scale: 0.97 }}
-          >
-            ENTER LIVE DASHBOARD
-            <ArrowRight size={18} />
-          </motion.button>
-          <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.62rem', letterSpacing: '0.12em', color: 'var(--color-white-muted)' }}>
-            AI-ENABLED GEOSPATIAL FIRE CLASSIFICATION SYSTEM
-          </p>
         </motion.div>
       </div>
     </div>
