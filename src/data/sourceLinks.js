@@ -19,24 +19,6 @@ export const RESEARCH_SOURCES = [
         type: 'doc',
       },
       {
-        label: 'Gemini AI Research Compilation',
-        description: 'AI-assisted research and literature review',
-        url: '#',
-        type: 'doc',
-      },
-      {
-        label: 'Claude Research Analysis',
-        description: 'Supplementary AI-assisted analysis and documentation',
-        url: '#',
-        type: 'doc',
-      },
-      {
-        label: 'Additional Claude Research',
-        description: 'Extended research notes and technical deep-dives',
-        url: '#',
-        type: 'doc',
-      },
-      {
         label: 'Project Documentation',
         description: 'Full project technical documentation and architecture notes',
         url: 'https://drive.google.com/drive/folders/1wUalbwyz7dt1ZE1yd5j-azrV857FjWyL?usp=sharing',
